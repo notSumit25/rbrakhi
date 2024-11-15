@@ -2,8 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
-      <Image src="/pic.png" alt="pic" width={500} height={500} />
+    <div>
+      <div className="w-full h-screen flex justify-center items-center sm:hidden bg-black">
+        <Image
+          src="/movile.png"
+          alt="Picture of the author"
+          width={500}
+          height={500}
+        />
+      </div>
+      <div
+        className="w-full h-screen justify-center items-center bg-cover bg-center hidden sm:block"
+        style={{
+          backgroundImage: 'url("/pic.jpg")',
+        }}
+      >
+        {/* Other content can go here */}
+      </div>
     </div>
   );
 }
