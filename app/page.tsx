@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <div className="w-full h-screen flex justify-center items-center sm:hidden bg-black">
         <Image
-          src="/movile.png"
+          src="/movile.jpg"
           alt="Picture of the author"
           width={500}
           height={500}
